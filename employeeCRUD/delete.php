@@ -59,7 +59,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
                 <div class="page-header">
                     <h1>Delete Record</h1>
                 </div>
-                <form action="<?php echo htmlspecialchars("PHP_SELF"); ?>" method="post">
+                <form action="<?php echo htmlspecialchars($_SERVER ["PHP_SELF"]); ?>" method="post">
                     <div class="alert alert-danger fade in ">
                         <input type="hidden" name = "id" value="<?php echo trim($_GET["id"]); ?>">
                         <p>Are you sure you want to delete this record ?</p> <br>
